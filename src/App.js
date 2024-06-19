@@ -1,7 +1,7 @@
 import * as React from "react";
 
 import Gallery from "./Pages/Gallery"
-// import HomePage from "./Pages/HomePage";
+import HomePage from "./Pages/HomePage";
 
 
 
@@ -11,6 +11,7 @@ function App() {
    
       <Gallery /> 
       {/* <HomePage /> */}
+
         
       
     </div>

@@ -1,48 +1,20 @@
-import React from 'react'
+import React from 'react';
+import imgLogo from "../assets/logo.png";
 
-const navbar = () => {
+const Navbar = () => {
   return (
-    <div>
-       <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          {/* <form class="d-flex" role="search">
-            
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form> */}
+    <nav className="bg-white shadow dark:bg-gray-800 w-full">
+      <div className="container flex items-center justify-between p-6 mx-auto">
+        <div className="flex items-center">
+          <img width={80} src={imgLogo} alt="Logo" />
+        </div>
+        <div className="flex items-center ">
+          <a href="#" className="border-b-2 border-transparent hover:text-gray-800 transition-colors duration-300 transform dark:hover:text-blue-400 hover:border-blue-500 mx-1.5 sm:mx-6">HomePage</a>
+          <a href="#" className="border-b-2 border-transparent hover:text-gray-800 transition-colors duration-300 transform dark:hover:text-blue-400 hover:border-blue-500 mx-1.5 sm:mx-6">Gallery</a>
         </div>
       </div>
     </nav>
-    
-    </div>
-  )
+  );
 }
 
-export default navbar
+export default Navbar;
