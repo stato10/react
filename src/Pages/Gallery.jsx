@@ -42,7 +42,6 @@ const Gallery = () => {
        <Navbar />
         <Header></Header>
         <Main></Main>
-        <Footer></Footer>
     </div>
   )
 }

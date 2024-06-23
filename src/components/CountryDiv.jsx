@@ -9,7 +9,7 @@ const CountryDiv = ({ image, name }) => {
 
  
     <div className="max-w-2xl overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
-      <img className="object-cover w-full h-64" src={image} alt="..." />
+      <img className="object-cover w-full h-64" src={image} height={50} alt="..." />
 
       <div className="p-6">
         <div>
